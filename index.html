@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tecnología sin miedo — Blog del proyecto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+  <button class="pestana activa" data-panel="1" onclick="mostrarPanel(1)">Entrada 1</button>
+  <button class="pestana" data-panel="2" onclick="mostrarPanel(2)">Entrada 2</button>
+  <button class="pestana" data-panel="3" onclick="mostrarPanel(3)">Entrada 3</button>
+  <button class="pestana" data-panel="4" onclick="mostrarPanel(4)">Entrada 4</button>
+  <button class="pestana" data-panel="5" onclick="mostrarPanel(5)">Entrada 5</button>
+  <a class="boton-drive" href="https://uniminuto0-my.sharepoint.com/:f:/g/personal/maickol_alarcon_uniminuto_edu_co/IgBnJizp4HkrS4L0-101UwowAVW6hhTUUGbJdESYGmRB2Ns?e=RKqkrc" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8M12 14v6"/></svg>
+    Link drive
+  </a>
+</nav>
+
+<div class="envoltura">
+
+  <span class="blob" style="width:140px;height:140px;background:#D9F0AE;top:520px;left:-70px;opacity:.6;"></span>
+  <span class="blob" style="width:100px;height:100px;background:#F7C9E4;top:900px;right:-50px;opacity:.5;"></span>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <span class="blob blob-verde"></span>
+    <span class="blob blob-rosa"></span>
+    <p class="insignia-pill">Proyecto de capacitación</p>
+    <h1>Tecnología <span class="resalte">sin miedo</span></h1>
+
+    <p class="presentado-pill">
+      <span class="punto"></span>
+      <strong>Alfabetización y seguridad digital para personas adultas con poca experiencia tecnológica.</strong>
+    </p>
+  </header>
+
+  <main>
+
+    <!-- ================= ENTRADA 1 ================= -->
+    <section class="panel activo" id="panel-1">
+      <div class="entrada-encabezado">
+        <span class="insignia-entrada">Entrada 1</span>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Presentación del equipo</p>
+        <h2 class="tema-titulo">¿Quiénes somos?</h2>
+        <div class="tarjeta tarjeta-descripcion">
+          <div class="con-icono">
+            <div>
+              <p>
+                Somos un grupo de estudiantes de la Universidad Minuto de Dios, que nos hemos unido
+                para desarrollar un proyecto de capacitación en alfabetización y seguridad digital
+                dirigido a personas adultas con poca experiencia tecnológica. Cada uno de nosotros
+                aporta conocimientos y habilidades únicas que nos permiten abordar este desafío
+                desde diferentes perspectivas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-equipo">
+          <div class="card-miembro">
+            <img src="img/yulieth.jpg" alt="Yulieth" class="img-miembro">
+            <strong>Yulieth Carolina Rojas R.</strong>
+            <p>Medellín, Antioquia</p>
+          </div>
+
+          <div class="card-miembro">
+            <img src="img/maickol.jpg" alt="Maickol" class="img-miembro">
+            <strong>Maickol Alejandro Alarcón Rodríguez</strong>
+            <p>Zipaquirá, Cundinamarca</p>
+          </div>
+
+          <div class="card-miembro">
+            <img src="img/cristian.jpg" alt="Cristian" class="img-miembro">
+            <strong>Cristian Leonardo Santiago García</strong>
+            <p>Ocaña, Norte de Santander</p>
+          </div>
+
+          <div class="card-miembro">
+            <img src="img/luisa.jpg" alt="Luisa" class="img-miembro">
+            <strong>Luisa Fernanda Barreto Naranjo</strong>
+            <p>Ibagué, Tolima</p>
+          </div>
+
+          <div class="card-miembro">
+            <img src="img/wilson.jpg" alt="Wilson" class="img-miembro">
+            <strong>Wilson Daniel Mellado Jiménez</strong>
+            <p>Cundinamarca, Bogotá</p>
+          </div>
+
+          <div class="card-miembro">
+            <img src="img/luis.jpg" alt="Luis" class="img-miembro">
+            <strong>Luis Fernando Riascos</strong>
+            <p>Ingeniería de software</p>
+            <p>Pasto, Nariño</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Comunidad</p>
+        <h2 class="tema-titulo">¿Con qué comunidad o grupo social vamos a trabajar?</h2>
+        <div class="dos-columnas">
+          <div class="tarjeta">
+            <div class="con-icono">
+              <span class="insignia-icono ins-rosa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h11a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H10l-4 3v-3H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2Z"/></svg>
+              </span>
+              <div style="flex:1;">
+                <p style="margin-bottom:10px;"><strong>Comunidad poblacional</strong></p>
+                <p style="margin:0;">Trabajaremos con población adulta ubicada en los territorios de cada
+                  integrante del equipo: Medellín, Zipaquirá, Ocaña, Ibagué, Bogotá y Pasto.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="foto">
+            <div class="foto-vacia">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1
+              1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.2"/></svg>
+              [fotografía-collage]
+            </div>
+            <p class="foto-pie">[ pie de foto]</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Ubicación</p>
+        <h2 class="tema-titulo">¿Dónde se encuentra ubicada?</h2>
+        <div class="tarjeta">
+          <div class="con-icono">
+            <span class="insignia-icono ins-amarillo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+            </span>
+            <div style="flex:1;">
+              <p style="margin:0;">Al ser una comunidad poblacional, la capacitación se desarrolla en seis territorios distintos, uno por cada integrante del equipo:</p>
+            </div>
+          </div>
+          <div class="lugar lugar-mapa">
+            <div id="mapa" class="mapa-caja"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Modalidad</p>
+        <h2 class="tema-titulo">¿En qué modalidad haremos la práctica?</h2>
+        <div class="tarjeta">
+          <div class="con-icono">
+            <span class="insignia-icono ins-lavanda">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="1.4"/><path d="M8 21h8M12 17v4"/></svg>
+            </span>
+            <div class="relleno" style="flex:1;">modalidad — virtual </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENTRADA 2 ================= -->
+    <section class="panel" id="panel-2">
+      <div class="entrada-encabezado">
+        <span class="insignia-entrada">Entrada 2</span>
+        <span class="insignia-fecha">[REEMPLAZAR: fecha]</span>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Título de la entrada</p>
+        <h2 class="tema-titulo">[REEMPLAZAR: título breve y llamativo]</h2>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Problemática y contexto</p>
+        <h2 class="tema-titulo">¿Qué necesidad estamos atendiendo?</h2>
+        <div class="dos-columnas">
+          <div class="foto">
+            <div class="foto-vacia">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.2"/></svg>
+              Fotografía pendiente
+            </div>
+            <p class="foto-pie">[REEMPLAZAR: imagen de contexto, por ejemplo una persona usando el celular]</p>
+          </div>
+          <div class="tarjeta">
+            <div class="con-icono">
+              <span class="insignia-icono ins-rosa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 21 19H3L12 4Z"/><path d="M12 10v4M12 17h.01"/></svg>
+              </span>
+              <p style="flex:1; margin:0;">El uso de la tecnología es cada vez más necesario para realizar compras, pagos, trámites y comunicarse. Sin embargo, algunas personas adultas tienen dificultades o inseguridad al utilizar estas herramientas, lo que puede aumentar su vulnerabilidad ante fraudes, enlaces maliciosos y suplantación de identidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expandir" onclick="alternarExtra('extra-contexto', this)">
+          Ver el contexto del territorio
+          <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="extra" id="extra-contexto">
+          <div class="extra-inner">
+            <div class="relleno" style="margin-bottom:14px;">[REEMPLAZAR: describe el territorio o comunidad donde se desarrollará la práctica en responsabilidad social — características sociales, económicas o culturales relevantes]</div>
+
+            <div class="lugar lugar-mapa">
+              <div id="mapa-contexto" class="mapa-caja"></div>
+            </div>
+
+            <!--
+              REEMPLAZAR: completa esta tabla con el nombre exacto del lugar y sus coordenadas
+              reales, y luego copia esos mismos datos dentro del arreglo "lugaresContexto"
+              en script.js (ahí es donde el mapa de arriba lee las coordenadas).
+            -->
+            <table class="tabla-coordenadas">
+              <thead>
+                <tr>
+                  <th>Nombre del lugar</th>
+                  <th>Latitud</th>
+                  <th>Longitud</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tbody>
+  <tr>
+    <td>Medellín, Antioquia (Yulieth)</td>
+    <td>6.2641267634196565</td>
+    <td>-75.61289214480745</td>
+  </tr>
+  <tr>
+    <td>Zipaquirá, Cundinamarca (Maickol)</td>
+    <td>5.004</td>
+    <td>-73.978861</td>
+  </tr>
+  <tr>
+    <td>Ocaña, Norte de Santander (Cristian)</td>
+    <td>8.241342</td>
+    <td>-73.354319</td>
+  </tr>
+  <tr>
+    <td>Bogotá, Cundinamarca (Luisa)</td>
+    <td>4.661257</td>
+    <td>-74.081933</td>
+  </tr>
+  <tr>
+    <td>Bogotá, Cundinamarca (Wilson Daniel)</td>
+    <td>4.675507858088218</td>
+    <td>-74.09731686766843</td>
+  </tr>
+  <tr>
+    <td>Pasto, Nariño (Luis Fernando)</td>
+    <td>1.219889</td>
+    <td>-77.267396</td>
+  </tr>
+</tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Objetivos</p>
+        <h2 class="tema-titulo">Objetivo general</h2>
+        <div class="tarjeta" style="margin-bottom:18px;">
+          <p style="margin:0;">Fortalecer las competencias y la confianza digital de personas adultas mediante capacitaciones prácticas sobre el uso seguro de herramientas y servicios digitales.</p>
+        </div>
+        <p style="font-family:'Baloo 2',sans-serif; font-weight:700; font-size:16px; margin-bottom:12px;">Objetivos específicos</p>
+        <ul class="lista-objetivos">
+          <li><span class="bala">1</span> Identificar las principales dificultades y necesidades digitales de los participantes.</li>
+          <li><span class="bala">2</span> Enseñar a reconocer y prevenir estafas y amenazas digitales.</li>
+          <li><span class="bala">3</span> Capacitar sobre el uso seguro de compras, pagos y trámites en Internet.</li>
+          <li><span class="bala">4</span> Fortalecer la capacidad para actuar ante situaciones de riesgo digital.</li>
+        </ul>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Justificación</p>
+        <h2 class="tema-titulo">¿Por qué este proyecto importa?</h2>
+        <div class="tarjeta">
+          <div class="con-icono">
+            <span class="insignia-icono ins-amarillo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .8 1.7V16h5.6v-.5c0-.7.3-1.3.8-1.7A6 6 0 0 0 12 3Z"/></svg>
+            </span>
+            <div style="flex:1;">
+              <p>El proyecto busca contribuir a la autonomía, confianza y seguridad digital de los participantes, aplicando nuestros conocimientos tecnológicos para responder a una necesidad real de la comunidad.</p>
+              <div class="relleno">[REEMPLAZAR: amplía la justificación desde el carácter académico, científico y social del proyecto, y los aportes concretos que puede generar en la comunidad]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tema">
+        <p class="tema-etiqueta">Referencias</p>
+        <h2 class="tema-titulo">Fuentes consultadas (normas APA)</h2>
+        <div class="tarjeta">
+          <ol class="referencias">
+            <li>[REEMPLAZAR: Apellido, A. A. (Año). <em>Título de la fuente</em>. Editorial o sitio web. URL]</li>
+            <li>[REEMPLAZAR: Apellido, B. B. (Año). <em>Título de la fuente</em>. Editorial o sitio web. URL]</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENTRADA 3 ================= -->
+    <section class="panel" id="panel-3">
+      <div class="entrada-encabezado">
+        <span class="insignia-entrada">Entrada 3</span>
+        <span class="insignia-fecha">Segunda sesión</span>
+      </div>
+      <div class="tema">
+        <div class="pendiente">
+          <span class="insignia-icono ins-lavanda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+          </span>
+          <h3>Esta entrada aún no tiene información</h3>
+      
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENTRADA 4 ================= -->
+    <section class="panel" id="panel-4">
+      <div class="entrada-encabezado">
+        <span class="insignia-entrada">Entrada 4</span>
+        <span class="insignia-fecha">Tercera sesión</span>
+      </div>
+      <div class="tema">
+        <div class="pendiente">
+          <span class="insignia-icono ins-lavanda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+          </span>
+          <h3>Esta entrada aún no tiene información</h3>
+          <p>Aquí irá el relato y las evidencias de la tercera sesión de la capacitación.</p>
+          <p class="nota">Cuando tengas el contenido, sigue la misma estructura de la Entrada 2: un tema por bloque, con su tarjeta, icono, texto y fotografías.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENTRADA 5 ================= -->
+    <section class="panel" id="panel-5">
+      <div class="entrada-encabezado">
+        <span class="insignia-entrada">Entrada 5</span>
+        <span class="insignia-fecha">Cuarta sesión y cierre</span>
+      </div>
+      <div class="tema">
+        <div class="pendiente">
+          <span class="insignia-icono ins-lavanda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+          </span>
+          <h3>Esta entrada aún no tiene información</h3>
+          <p>Aquí irán las evidencias de la última sesión, junto con el cierre y las conclusiones del proyecto.</p>
+          <p class="nota">Cuando tengas el contenido, sigue la misma estructura de la Entrada 2: un tema por bloque, con su tarjeta, icono, texto y fotografías.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Tecnología sin miedo · Yulieth Rojas, Maickol Alarcón, Cristian García, Luisa Barreto, Wilson Mellado y Luis Riascos · 2026
+  </footer>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

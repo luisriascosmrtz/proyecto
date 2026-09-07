@@ -53,7 +53,8 @@
 
       <div class="tema">
         <p class="tema-etiqueta">Presentación del equipo</p>
-        <h2 class="tema-titulo">¿Quiénes somos?</h2>
+        <h2 class="tema-titulo">¿Quiénes somos?
+        </h2>
         <div class="tarjeta tarjeta-descripcion">
           <div class="con-icono">
             <div>
@@ -69,42 +70,96 @@
         </div>
 
         <div class="grid-equipo">
+
+          <!-- YULIETH -->
           <div class="card-miembro">
             <img src="img/yulieth.jpg" alt="Yulieth" class="img-miembro">
             <strong>Yulieth Carolina Rojas R.</strong>
             <p>Medellín, Antioquia</p>
+            <p>Administración de empresas</p>
+
+            <button class="btn-vermas" onclick="toggleInfo(this)">Ver más</button>
+
+            <div class="info-extra">
+              <p>Le encanta el deporte, disfrutar los momentos en familia y estar en contacto con el campo. Trabaja en Cueros Vélez, donde ha adquirido nuevas experiencias personales y profesionales.</p>
+              <p>En música disfruta casi todos los géneros, con especial afinidad por la música popular y los vallenatos. Su compañero especial es Río, su perro. 🐶❤️</p>
+            </div>
           </div>
 
+          <!-- MAICKOL -->
           <div class="card-miembro">
             <img src="img/maickol.jpg" alt="Maickol" class="img-miembro">
-            <strong>Maickol Alejandro Alarcón Rodríguez</strong>
+            <strong>Maickol Alejandro Alarcón R.</strong>
             <p>Zipaquirá, Cundinamarca</p>
+            <p>Ingeniería de software</p>
+
+            <button class="btn-vermas" onclick="toggleInfo(this)">Ver más</button>
+
+            <div class="info-extra">
+              <p>Interesado en la tecnología y el desarrollo de software.</p>
+              <p>Le gusta aprender nuevas herramientas y trabajar en equipo.</p>
+            </div>
           </div>
 
+          <!-- CRISTIAN -->
           <div class="card-miembro">
             <img src="img/cristian.jpg" alt="Cristian" class="img-miembro">
-            <strong>Cristian Leonardo Santiago García</strong>
+            <strong>Cristian Leonardo Santiago G.</strong>
             <p>Ocaña, Norte de Santander</p>
+
+            <button class="btn-vermas" onclick="toggleInfo(this)">Ver más</button>
+
+            <div class="info-extra">
+              <p>Apasionado por la tecnología y la innovación.</p>
+              <p>Disfruta aprender y aportar ideas en proyectos digitales.</p>
+            </div>
           </div>
 
+          <!-- LUISA -->
           <div class="card-miembro">
             <img src="img/luisa.jpg" alt="Luisa" class="img-miembro">
-            <strong>Luisa Fernanda Barreto Naranjo</strong>
+            <strong>Luisa Fernanda Barreto N.</strong>
             <p>Ibagué, Tolima</p>
+            <p>Ingeniería de software</p>
+
+            <button class="btn-vermas" onclick="toggleInfo(this)">Ver más</button>
+
+            <div class="info-extra">
+              <p>Interesada en el aprendizaje constante y el trabajo colaborativo.</p>
+              <p>Le gusta aportar soluciones creativas a los proyectos.</p>
+            </div>
           </div>
 
+          <!-- WILSON -->
           <div class="card-miembro">
             <img src="img/wilson.jpg" alt="Wilson" class="img-miembro">
-            <strong>Wilson Daniel Mellado Jiménez</strong>
+            <strong>Wilson Daniel Mellado J.</strong>
             <p>Cundinamarca, Bogotá</p>
+            <p>Ingeniería de software</p>
+
+            <button class="btn-vermas" onclick="toggleInfo(this)">Ver más</button>
+
+            <div class="info-extra">
+              <p>Interesado en el desarrollo tecnológico y el aprendizaje digital.</p>
+              <p>Disfruta trabajar en equipo y mejorar sus habilidades.</p>
+            </div>
           </div>
 
+          <!-- LUIS -->
           <div class="card-miembro">
             <img src="img/luis.jpg" alt="Luis" class="img-miembro">
-            <strong>Luis Fernando Riascos</strong>
-            <p>Ingeniería de software</p>
+            <strong>Luis Fernando Riascos M.</strong>
             <p>Pasto, Nariño</p>
+            <p>Ingeniería de software</p>
+
+            <button class="btn-vermas" onclick="toggleInfo(this)">Ver más</button>
+
+            <div class="info-extra">
+              <p>Soy Luis Fernando Riascos, tengo 22 años y soy tecnólogo en Análisis y Desarrollo de Software. Estoy finalizando mi carrera en Uniminuto. Me apasiona la tecnología, disfruto ser creativo y encontrar soluciones innovadoras.</p>
+              
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -119,20 +174,14 @@
               </span>
               <div style="flex:1;">
                 <p style="margin-bottom:10px;"><strong>Comunidad poblacional</strong></p>
-                <p style="margin:0;">Trabajaremos con población adulta ubicada en los territorios de cada
+                <p style="margin:0;">Trabajaremos con población adulta mayor ubicada en los territorios de cada
                   integrante del equipo: Medellín, Zipaquirá, Ocaña, Ibagué, Bogotá y Pasto.
                 </p>
               </div>
             </div>
           </div>
           <div class="foto">
-            <div class="foto-vacia">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
-              stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1
-              1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.2"/></svg>
-              [fotografía-collage]
-            </div>
-            <p class="foto-pie">[ pie de foto]</p>
+            <img src="img/adultos.jpg" alt="Fotografía del proyecto">
           </div>
         </div>
       </div>
@@ -161,43 +210,44 @@
         <div class="tarjeta">
           <div class="con-icono">
             <span class="insignia-icono ins-lavanda">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="1.4"/><path d="M8 21h8M12 17v4"/></svg>
+              <img src="img/teams.png" alt="Teams" class="logo-teams">
             </span>
-            <div class="relleno" style="flex:1;">modalidad — virtual </div>
+            <div class="relleno" style="flex:1;">
+              Modalidad virtual mediante Microsoft Teams.<br>
+              Se realizará los sábados en horario nocturno de 7:00 p.m. a 9:30 p.m.
+            </div>
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- ================= ENTRADA 2 ================= -->
     <section class="panel" id="panel-2">
       <div class="entrada-encabezado">
         <span class="insignia-entrada">Entrada 2</span>
-        <span class="insignia-fecha">[REEMPLAZAR: fecha]</span>
       </div>
 
       <div class="tema">
         <p class="tema-etiqueta">Título de la entrada</p>
-        <h2 class="tema-titulo">[REEMPLAZAR: título breve y llamativo]</h2>
+        <h2 class="tema-titulo titulo-color">El punto de partida: identificando necesidades digitales</h2>
       </div>
 
       <div class="tema">
         <p class="tema-etiqueta">Problemática y contexto</p>
         <h2 class="tema-titulo">¿Qué necesidad estamos atendiendo?</h2>
         <div class="dos-columnas">
+
           <div class="foto">
-            <div class="foto-vacia">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.2"/></svg>
-              Fotografía pendiente
-            </div>
-            <p class="foto-pie">[REEMPLAZAR: imagen de contexto, por ejemplo una persona usando el celular]</p>
+            <img src="img/image.jpg" alt="Persona adulta mayor usando el celular">
           </div>
+
           <div class="tarjeta">
             <div class="con-icono">
               <span class="insignia-icono ins-rosa">
                 <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 21 19H3L12 4Z"/><path d="M12 10v4M12 17h.01"/></svg>
               </span>
-              <p style="flex:1; margin:0;">El uso de la tecnología es cada vez más necesario para realizar compras, pagos, trámites y comunicarse. Sin embargo, algunas personas adultas tienen dificultades o inseguridad al utilizar estas herramientas, lo que puede aumentar su vulnerabilidad ante fraudes, enlaces maliciosos y suplantación de identidad.</p>
+              <p style="flex:1; margin:0;">El uso de la tecnología es cada vez más necesario para realizar compras, pagos, trámites y comunicarse. Sin embargo, muchos adultos mayores tienen dificultades o inseguridad al utilizar el celular y otras herramientas digitales, lo que aumenta su vulnerabilidad ante estafas, enlaces maliciosos y suplantación de identidad de familiares.</p>
             </div>
           </div>
         </div>
@@ -208,17 +258,14 @@
         </button>
         <div class="extra" id="extra-contexto">
           <div class="extra-inner">
-            <div class="relleno" style="margin-bottom:14px;">[REEMPLAZAR: describe el territorio o comunidad donde se desarrollará la práctica en responsabilidad social — características sociales, económicas o culturales relevantes]</div>
+            <div class="relleno" style="margin-bottom:14px;">
+              La capacitación llega a adultos mayores de seis territorios de Colombia (Medellín, Zipaquirá, Ocaña, Ibagué, Bogotá y Pasto), zonas urbanas donde el acceso al celular ya es común, pero el acompañamiento en su uso es escaso. Muchos participantes usan a diario aplicaciones como WhatsApp, pero con poca confianza en temas de seguridad: no siempre saben identificar un mensaje fraudulento, proteger una contraseña o reconocer un intento de suplantación, lo que los expone especialmente a fraudes por falsas promociones, premios o solicitudes de dinero.
+            </div>
 
             <div class="lugar lugar-mapa">
               <div id="mapa-contexto" class="mapa-caja"></div>
             </div>
 
-            <!--
-              REEMPLAZAR: completa esta tabla con el nombre exacto del lugar y sus coordenadas
-              reales, y luego copia esos mismos datos dentro del arreglo "lugaresContexto"
-              en script.js (ahí es donde el mapa de arriba lee las coordenadas).
-            -->
             <table class="tabla-coordenadas">
               <thead>
                 <tr>
@@ -228,38 +275,36 @@
                 </tr>
               </thead>
               <tbody>
-              <tbody>
-  <tr>
-    <td>Medellín, Antioquia (Yulieth)</td>
-    <td>6.2641267634196565</td>
-    <td>-75.61289214480745</td>
-  </tr>
-  <tr>
-    <td>Zipaquirá, Cundinamarca (Maickol)</td>
-    <td>5.004</td>
-    <td>-73.978861</td>
-  </tr>
-  <tr>
-    <td>Ocaña, Norte de Santander (Cristian)</td>
-    <td>8.241342</td>
-    <td>-73.354319</td>
-  </tr>
-  <tr>
-    <td>Bogotá, Cundinamarca (Luisa)</td>
-    <td>4.661257</td>
-    <td>-74.081933</td>
-  </tr>
-  <tr>
-    <td>Bogotá, Cundinamarca (Wilson Daniel)</td>
-    <td>4.675507858088218</td>
-    <td>-74.09731686766843</td>
-  </tr>
-  <tr>
-    <td>Pasto, Nariño (Luis Fernando)</td>
-    <td>1.219889</td>
-    <td>-77.267396</td>
-  </tr>
-</tbody>
+                <tr>
+                  <td>Medellín, Antioquia (Yulieth)</td>
+                  <td>6.2641267634196565</td>
+                  <td>-75.61289214480745</td>
+                </tr>
+                <tr>
+                  <td>Zipaquirá, Cundinamarca (Maickol)</td>
+                  <td>5.004</td>
+                  <td>-73.978861</td>
+                </tr>
+                <tr>
+                  <td>Ocaña, Norte de Santander (Cristian)</td>
+                  <td>8.241342</td>
+                  <td>-73.354319</td>
+                </tr>
+                <tr>
+                  <td>Bogotá, Cundinamarca (Luisa)</td>
+                  <td>4.661257</td>
+                  <td>-74.081933</td>
+                </tr>
+                <tr>
+                  <td>Bogotá, Cundinamarca (Wilson Daniel)</td>
+                  <td>4.675507858088218</td>
+                  <td>-74.09731686766843</td>
+                </tr>
+                <tr>
+                  <td>Pasto, Nariño (Luis Fernando)</td>
+                  <td>1.219889</td>
+                  <td>-77.267396</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -270,14 +315,15 @@
         <p class="tema-etiqueta">Objetivos</p>
         <h2 class="tema-titulo">Objetivo general</h2>
         <div class="tarjeta" style="margin-bottom:18px;">
-          <p style="margin:0;">Fortalecer las competencias y la confianza digital de personas adultas mediante capacitaciones prácticas sobre el uso seguro de herramientas y servicios digitales.</p>
+          <p style="margin:0;">Fortalecer las competencias y la confianza digital de las personas adultas mayores mediante capacitaciones prácticas sobre el uso seguro del celular y de las herramientas y servicios digitales.</p>
         </div>
         <p style="font-family:'Baloo 2',sans-serif; font-weight:700; font-size:16px; margin-bottom:12px;">Objetivos específicos</p>
         <ul class="lista-objetivos">
-          <li><span class="bala">1</span> Identificar las principales dificultades y necesidades digitales de los participantes.</li>
-          <li><span class="bala">2</span> Enseñar a reconocer y prevenir estafas y amenazas digitales.</li>
-          <li><span class="bala">3</span> Capacitar sobre el uso seguro de compras, pagos y trámites en Internet.</li>
-          <li><span class="bala">4</span> Fortalecer la capacidad para actuar ante situaciones de riesgo digital.</li>
+          <li><span class="bala">1</span> Enseñar el uso básico y seguro del celular: WhatsApp, llamadas, videollamadas, contactos, cámara y actualizaciones.</li>
+          <li><span class="bala">2</span> Enseñar a reconocer estafas digitales: mensajes y llamadas sospechosas, suplantación de familiares y falsas promociones.</li>
+          <li><span class="bala">3</span> Explicar la protección de datos y contraseñas, y cómo crear una contraseña segura.</li>
+          <li><span class="bala">4</span> Capacitar sobre el uso seguro de aplicaciones para trámites, pagos y servicios bancarios.</li>
+          <li><span class="bala">5</span> Fortalecer la alfabetización digital y la autonomía de los participantes para desenvolverse en internet con confianza.</li>
         </ul>
       </div>
 
@@ -290,8 +336,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .8 1.7V16h5.6v-.5c0-.7.3-1.3.8-1.7A6 6 0 0 0 12 3Z"/></svg>
             </span>
             <div style="flex:1;">
-              <p>El proyecto busca contribuir a la autonomía, confianza y seguridad digital de los participantes, aplicando nuestros conocimientos tecnológicos para responder a una necesidad real de la comunidad.</p>
-              <div class="relleno">[REEMPLAZAR: amplía la justificación desde el carácter académico, científico y social del proyecto, y los aportes concretos que puede generar en la comunidad]</div>
+              
+              <p>Buscamos fortalecer la autonomía, confianza y seguridad digital de los adultos mayores en Colombia, enseñándoles a usar el celular, proteger sus datos e identificar estafas digitales, frente a una brecha tecnológica que, según el DANE, aún afecta a la mayoría de esta población, especialmente en zonas rurales..</p>
             </div>
           </div>
         </div>
@@ -302,9 +348,9 @@
         <h2 class="tema-titulo">Fuentes consultadas (normas APA)</h2>
         <div class="tarjeta">
           <ol class="referencias">
-            <li>[REEMPLAZAR: Apellido, A. A. (Año). <em>Título de la fuente</em>. Editorial o sitio web. URL]</li>
-            <li>[REEMPLAZAR: Apellido, B. B. (Año). <em>Título de la fuente</em>. Editorial o sitio web. URL]</li>
-          </ol>
+            <li>Ministerio de Tecnologías de la Información y las Comunicaciones. (2019). <em>Adultos mayores salieron del analfabetismo digital y entraron al mundo de las TIC</em>. MinTIC. https://mintic.gov.co/portal/inicio/Sala-de-Prensa/Noticias/124707:Adultos-mayores-salieron-del-analfabetismo-digital-y-entraron-al-mundo-de-las-TIC</li>
+            <li>Mayor Vida. (2025). <em>Alfabetización digital en personas mayores: un reto para Colombia</em>. https://mayorvida.com/blogs/alfabetizacion-digital/</li>
+            
         </div>
       </div>
     </section>
@@ -313,15 +359,15 @@
     <section class="panel" id="panel-3">
       <div class="entrada-encabezado">
         <span class="insignia-entrada">Entrada 3</span>
-        <span class="insignia-fecha">Segunda sesión</span>
       </div>
       <div class="tema">
         <div class="pendiente">
           <span class="insignia-icono ins-lavanda">
             <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
           </span>
-          <h3>Esta entrada aún no tiene información</h3>
-      
+          <h3>Esta entrada está en construcción :D</h3>
+        
+          
         </div>
       </div>
     </section>
@@ -330,16 +376,14 @@
     <section class="panel" id="panel-4">
       <div class="entrada-encabezado">
         <span class="insignia-entrada">Entrada 4</span>
-        <span class="insignia-fecha">Tercera sesión</span>
       </div>
       <div class="tema">
         <div class="pendiente">
           <span class="insignia-icono ins-lavanda">
             <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
           </span>
-          <h3>Esta entrada aún no tiene información</h3>
-          <p>Aquí irá el relato y las evidencias de la tercera sesión de la capacitación.</p>
-          <p class="nota">Cuando tengas el contenido, sigue la misma estructura de la Entrada 2: un tema por bloque, con su tarjeta, icono, texto y fotografías.</p>
+          <h3>Esta entrada está en construcción :D</h3>
+          
         </div>
       </div>
     </section>
@@ -348,16 +392,14 @@
     <section class="panel" id="panel-5">
       <div class="entrada-encabezado">
         <span class="insignia-entrada">Entrada 5</span>
-        <span class="insignia-fecha">Cuarta sesión y cierre</span>
       </div>
       <div class="tema">
         <div class="pendiente">
           <span class="insignia-icono ins-lavanda">
             <svg viewBox="0 0 24 24" fill="none" stroke="var(--tinta)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
           </span>
-          <h3>Esta entrada aún no tiene información</h3>
-          <p>Aquí irán las evidencias de la última sesión, junto con el cierre y las conclusiones del proyecto.</p>
-          <p class="nota">Cuando tengas el contenido, sigue la misma estructura de la Entrada 2: un tema por bloque, con su tarjeta, icono, texto y fotografías.</p>
+          <h3>Esta entrada está en construcción :D</h3>
+          
         </div>
       </div>
     </section>
@@ -365,7 +407,7 @@
   </main>
 
   <footer>
-    Tecnología sin miedo · Yulieth Rojas, Maickol Alarcón, Cristian García, Luisa Barreto, Wilson Mellado y Luis Riascos · 2026
+    Tecnología sin miedo · 2026
   </footer>
 
 </div>
@@ -374,3 +416,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
